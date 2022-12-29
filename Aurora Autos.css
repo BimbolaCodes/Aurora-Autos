@@ -1,0 +1,84 @@
+.card img {
+    transition: transform 0.5s ease;
+  }
+  
+  .card img:hover {
+    transform: scale(1.1);
+  }
+  
+  .carousel-item img {
+    animation: fadeIn 2s;
+  }
+  
+  /* ul{
+    list-style: none;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  } */
+  /* li a:hover{
+    border-bottom: 4px solid grey;
+  } */
+/* .fimg{
+  display: block;
+  justify-content: center;
+  align-items: center;
+} */
+  #playlogo{
+    display: flex;
+    font-weight: bolder; 
+    font-size: 5rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1% ;
+    animation: play 4s 1s;
+  }
+
+  @keyframes play {
+    0%{
+      font-weight: bolder; 
+    }
+    20%{
+      padding-bottom: 15%;
+      color: #fff;
+      text-shadow: 2px chartreuse;
+    }
+    40%{
+      position: relative;
+      padding-bottom: 0%;      /* padding-right: 2%; */
+      color: #fff;
+      /* text-shadow: 0 25px 10px rgb(8, 15, 82); */
+    }
+    60%{
+      color: #fff;
+      padding-left: 22%;
+      /* text-shadow: 0 35px 20px rgb(8, 15, 82); */
+    }
+    80%{
+      padding-right: 20%;
+      color: #fff;
+      /* text-shadow: 0 15px 5px rgb(8, 15, 82); */
+    }
+    100%{
+      font-weight: bolder;
+      font-size: 4rem;
+      justify-content: center;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* navy blue gradient */
+  }
